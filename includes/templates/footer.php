@@ -24,7 +24,7 @@
       </div>
   </div>
 
-  <p class="copyright">Todos los derechos reservados GDLWEBCAMP 2018</p>
+  <p class="copyright">Todos los derechos reservados GDLWEBCAMP 2019</p>
 </footer>
 
 
