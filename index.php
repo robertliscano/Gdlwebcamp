@@ -84,7 +84,7 @@
                 <div id="<?php echo strtolower($evento['cat_evento']) ?>" class="info-curso ocultar clearfix">
               <?php } ?>
                     <div class="detalle-evento">
-                       <h3><?php echo utf8_encode($evento['nombre_evento']) ?></h3>
+                       <h3><?php echo html_entity_decode($evento['nombre_evento']) ?></h3>
                        <p><i class="far fa-clock"></i> <?php echo $evento['hora_evento'] ?></p>
                        <p><i class="fas fa-calendar"></i> <?php echo $evento['fecha_evento'] ?></p>
                        <p><i class="fas fa-user"></i> <?php echo $evento['nombre_invitado'] ?></p>
@@ -127,9 +127,9 @@
                 <h3>Pase por Días</h3>
                 <p class="numero">$30</p>
                 <ul>
-                  <li>Bocadillos Gratis</li>
-                  <li>Todas las conferencias</li>
-                  <li>Todos los talleres</li>
+                  <li><i class="fas fa-check"></i> Bocadillos Gratis</li>
+                  <li><i class="fas fa-check"></i> Todas las conferencias</li>
+                  <li><i class="fas fa-check"></i> Todos los talleres</li>
                 </ul>
                 <a href="#" class="button hollow">Comprar</a>
              </div>
@@ -139,9 +139,9 @@
                 <h3>Todos los Días</h3>
                 <p class="numero">$50</p>
                 <ul>
-                  <li>Bocadillos Gratis</li>
-                  <li>Todas las conferencias</li>
-                  <li>Todos los talleres</li>
+                  <li><i class="fas fa-check"></i> Bocadillos Gratis</li>
+                  <li><i class="fas fa-check"></i> Todas las conferencias</li>
+                  <li><i class="fas fa-check"></i> Todos los talleres</li>
                 </ul>
                 <a href="#" class="button">Comprar</a>
              </div>
@@ -151,9 +151,9 @@
                 <h3>Pase por 2 Días</h3>
                 <p class="numero">$45</p>
                 <ul>
-                  <li>Bocadillos Gratis</li>
-                  <li>Todas las conferencias</li>
-                  <li>Todos los talleres</li>
+                  <li><i class="fas fa-check"></i> Bocadillos Gratis</li>
+                  <li><i class="fas fa-check"></i> Todas las conferencias</li>
+                  <li><i class="fas fa-check"></i> Todos los talleres</li>
                 </ul>
                 <a href="#" class="button hollow">Comprar</a>
              </div>

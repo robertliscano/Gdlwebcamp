@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/all.css">
   <?php
      $archivo = basename($_SERVER['PHP_SELF']);
      $pagina = str_replace(".php", "", $archivo);
@@ -47,7 +48,7 @@
           <div class="informacion-evento">
             <div class="clearfix">
               <p class="fecha"><i class="far fa-calendar-alt"></i> 10-12 Dic</p>
-              <p class="ciudad"><i class="fas fa-map-marker-alt"></i> Joao Pessoa, Brazil</p>
+              <p class="ciudad"><i class="fas fa-map-marker-alt"></i> México DF, México</p>
            </div>
               <h1 class="nombre-sitio">GdlWebCamp</h1>
               <p class="slogan">La mejor conferencia de <span>Diseño Web</span></p>

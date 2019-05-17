@@ -4,16 +4,18 @@
 
   document.addEventListener('DOMContentLoaded', function(){
 
-    var map = L.map('mapa').setView([-7.108047, -34.825974], 15);
+    if ($("#mapa").length > 0) {
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+      var map = L.map('mapa').setView([-7.108047, -34.825974], 15);
 
-L.marker([-7.108047, -34.825974]).addTo(map)
-    .bindPopup('GDLWECAMMP 2018')
-    .openPopup();
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
 
+      L.marker([-7.108047, -34.825974]).addTo(map)
+          .bindPopup('GDLWECAMMP 2018')
+          .openPopup();
+   }
 
     //Campos Datos Usuarios
      var nombre = document.getElementById('nombre');
@@ -35,6 +37,8 @@ L.marker([-7.108047, -34.825974]).addTo(map)
     //Extras
     var camisas = document.getElementById('camisa_evento');
     var etiquetas = document.getElementById('etiquetas');
+
+   botonRegistro.disabled = true; //NOT WORKING
 
    if(document.getElementById('calcular')){
 
@@ -115,6 +119,9 @@ L.marker([-7.108047, -34.825974]).addTo(map)
             lista_productos.innerHTML += listadoProductos[i] + '<br/>';
           }
           suma.innerHTML = '$ ' + totalPagar.toFixed(2);
+
+          botonRegistro.disabled = false;
+          document.getElementById('total_pedido').value = totalPagar;
       }
     }
 
@@ -205,4 +212,6 @@ $(function() {
     $('#minutos').html(event.strftime('%M'));
     $('#segundos').html(event.strftime('%S'));
   })
+  //colorbox
+  $('.invitado-info').colorbox({inline:true, width: "50%"});
 })

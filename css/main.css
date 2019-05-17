@@ -169,7 +169,7 @@ h3 {
   font-size: 1em;
   margin-top: 20px;
   display: inline-block;
-  transition: all. .3 ease;
+  transition: all .3 ease;
   border: 2px solid #fe4918;
 }
 .button.hollow,
@@ -597,7 +597,7 @@ div.tabla-precios:hover {
   border: 1px solid #fe4918;
   box-shadow: 0px 0px 50px #666;
 }
-}
+
 div.tabla-precios ul li {
   font-family: 'PT Sans',sans-serif;
   font-size: 14px;
@@ -606,15 +606,8 @@ div.tabla-precios ul li {
   color: #868686;
   line-height: 26px;
 }
-div.tabla-precios ul li::before {
-  font-family: 'FontAwesome';
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 5px;
-  font-size: 20px;
-  color: green;
-  -webkit-font-smoothing: antialiased;
-  content: '\f00c';
+div.tabla-precios ul li i {
+  color:green;  
 }
 div.tabla-precios h3 {
   font-family: 'Oswald', sans-serif;
@@ -945,6 +938,22 @@ div.cboxElement {
   padding: 30px!important;
   text-align: center;
 }
+
+.resultado {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.correcto {
+  background-color: rgb(2, 173, 2); 
+}
+.error {
+  background-color: red;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
